@@ -1,8 +1,8 @@
 {
-  "name": "@brandon/error_handling",
+  "name": "bthis-handle-it-lite",
   "version": "1.0.0",
   "description": "Simple error handling package.",
-  "main": "app.js",
+  "main": "handle-it.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
