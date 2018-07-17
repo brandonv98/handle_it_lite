@@ -2,8 +2,7 @@
 A simple error catching an handling application. On error application will log an save in a error-log folder, error messages formatted in the date and time of error.
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.  
 
 > For development environment only
 
@@ -36,7 +35,7 @@ Now do the same for **npm** as followed ```npm -v``` output will look something 
 
 ___
 
-### Installing
+## Installing
 A step by step series of examples that tell you how to get a development env running  
 1. Step one  
   In your project root dir ***('./')*** use the following command in your terminal.
@@ -44,9 +43,9 @@ A step by step series of examples that tell you how to get a development env run
 $ npm i bthis-handle-it-lite --save-dev
 ```
 
-End with an example of getting some data out of the system or using it for a little demo .  
+___
 
-#### Example of usage.
+#### Example && Demo of usage.
 
 1. Example One.
 ``` js
@@ -110,19 +109,19 @@ This product is for development testing only.
 
 ___
 
-### Built With
+## Built With
 **[NodeJS](https://nodejs.org/dist/latest-v10.x/docs/api/)** - An asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications.
 
 **[FS](https://nodejs.org/api/fs.html#fs_file_system)** - Node.js as a File Server. The Node.js file system module allows you to work with the file system on your computer.
 
 ___
 
-### Authors
+## Authors
 * **Brandon VanCamp** - [WebSite](https://csdevs.io/)
 
 ___
 
-### License
+## License
 ![MIT](https://camo.githubusercontent.com/890acbdcb87868b382af9a4b1fac507b9659d9bf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c75652e737667)  
 
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.md) file for details.  
