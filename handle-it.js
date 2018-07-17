@@ -35,17 +35,21 @@ const handleIt = (errMsg, err) => {
         }
       }, //<------- End of dateFormat;
      msg: { // User message && default messages;
-       userMsg: errMsg,
+       userMsg: `${errMsg} -->`,
        errorMsg: `${today} --> ${errMsg}, \n stack : ${err} \n \n`,
-       errLogLocation: `Please check error logs for more details, "./error-logs/`
+       errLogLocation: `Please check error logs for more details, "./error-logs/`,
+       defaultErr: 'Error ! ----> ;'
      },
      mkDirErrLog: './error-logs' // File dir for making dir.
   };
 
     // NOTE: Handle error stacks.
   function errorMsg (userMsg, fileLocation, error, err) {
-      // // NOTE: Console log user error && file log location;
-    console.error(userMsg, fileLocation);
+        // // NOTE: Console log user error && file log location;
+      (errMsg.length > 20) // // HACK: if message is longer then 10 letters, log to error log.
+      ? console.error(config.msg.defaultErr, fileLocation)
+      : console.error(userMsg, fileLocation);
+
       //  //  /// Create file if file does not exist ///  //  //
     if (!fs.existsSync(config.mkDirErrLog)){
       fs.mkdirSync(config.mkDirErrLog);
@@ -62,5 +66,6 @@ const handleIt = (errMsg, err) => {
     // NOTE:  Format as : functionCall (user error message, error log location && name, other error message stack.);
   errorMsg(config.msg.userMsg, config.msg.errLogLocation + `${dateFormat('mm-dd-yyyy')}.log"`, err);
 };
+
 
 module.exports.error = handleIt;

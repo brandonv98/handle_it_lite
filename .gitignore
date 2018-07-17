@@ -64,4 +64,4 @@ typings/
 .next
 
 #testing.js
-testing.js
+./testing.js
