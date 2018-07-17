@@ -1,0 +1,22 @@
+{
+  "name": "@brandon/error_handling",
+  "version": "1.0.0",
+  "description": "Simple error handling package.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n/a.git"
+  },
+  "author": "Brandon VanCamp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/n/a/issues"
+  },
+  "homepage": "https://github.com/n/a#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
