@@ -66,4 +66,8 @@ typings/
 #testing.js
 ./testing.js
 testing.js
+
+#DS_Store File
+./.DS_Store
+../.DS_Store
 .DS_Store
